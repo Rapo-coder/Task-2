@@ -1,0 +1,193 @@
+* 
+{
+    margin: 0PX;
+}
+  
+body
+{
+  background: linear-gradient(#FFFFFF, #AFADAE );
+  background-image: url('Assets/background.png');
+}
+
+.titlebar 
+{
+    padding: 5px;
+}
+  .logo {
+    position: absolute;
+    top: 9px;
+    margin-left: 26px;
+  }
+
+  .topnav{
+    color: #FFFFFF;
+  }
+  .topnavbar {
+    padding: 11px;
+  }
+  .topnavbar ul {
+    list-style-type: none;
+    text-align: end;
+    padding: 8px 29px;
+
+  }
+  
+  .topnavbar li {
+    display: inline;
+  }
+  
+  .topnavbar ul li:not(:last-child)::after {
+    content: "|";
+    color: #E3E3E3;
+  }
+  
+  .topnavbar ul li a {
+    color: #929292;
+    padding: 6PX 27px 3px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.nav{
+  background-color: whitesmoke;
+}
+  .navbar
+  {
+    background-color: white;
+    border-top: 2px solid#E2E2E2;
+  }
+
+  .navbar ul {    
+    background-color: #DAD9D7;
+    display: flex;
+    list-style-type: none;
+    text-align: end;
+    padding: 14px 29px;
+    list-style-type: none;
+    text-align: end;
+    padding: 14px 29px;
+
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar ul li:not(:last-child)::after {
+    content: "|";
+    color: #E3E3E3;
+  }
+  
+  .navbar ul li a {
+    color: #383637;
+    padding: 6PX 27px 3px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+
+  .lastnavbar .navbar {
+    padding: 0px;
+  }
+  .lastnavbar .navbar ol {
+    list-style-type: none;
+    padding: 4px 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+
+  }
+  
+  .lastnavbar .navbar ol  li {
+    display: inline;
+  }
+  .lastnavbar .navbar ol li:not(:last-child)::after {
+    content: "";
+    color: #E3E3E3;
+  }
+  
+   .lastnavbar .navbar ol li a {
+    color: #576eb4;
+    padding: 5PX 19px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .lastnavbar .navbar ol li .Bridal-logo{
+    margin-left: 35px;
+    display: inline-block;
+  }
+
+  /* body */
+
+  .container
+  {
+    margin: auto;
+    width: 893px;
+    background-color: #FFFFFF;
+  }
+  
+  .content {
+    padding-bottom: 0px;
+    color: #fff;
+    background: rgba(7, 7, 7, 0.705);
+    display: flex;
+  }
+  
+  .Dining-Section {
+    display: flex;
+    border: 1px solid white;
+    margin: 3px;
+    border-image: linear-gradient(to top, #ffffff40, rgba(0, 0, 0, 0))1;
+  }
+  
+  
+  .Dine-image {
+    padding: 6px;
+  
+  
+  }
+  
+  .Dine-image  .din-img {
+    width: 708px;
+    position: relative;
+  }
+  .table-ideas
+  {
+    padding: 6px;
+    background-color: #3B3A38;
+    margin: 8px 4px 9px 0px;
+  }
+
+  .table-ideas h3{
+    margin-left: 4px;
+    color: #F9F7F8;
+  }
+
+  /* items */
+  .item-container
+  {
+    margin: auto;
+    width: 893px;
+  }
+
+  .Item
+  {
+    border: 5px solid black;
+    background-color: white;
+    display: flex;
+  }
+ .stemware{
+  border-right: 1px solid #3B3A38;
+  }
+  .home-accents
+  {
+border-right: 1px solid #3B3A38;
+  }
+  /* .Clearance-items
+  {
+
+  } */
