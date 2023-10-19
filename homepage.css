@@ -1,17 +1,23 @@
 * 
 {
     margin: 0PX;
+    padding: 0px;
 }
   
 body
 {
   background: linear-gradient(#FFFFFF, #AFADAE );
   background-image: url('Assets/background.png');
-}
+  background-repeat: no-repeat;
+} 
 
 .titlebar 
-{
+{   background: white;
     padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
 }
   .logo {
     position: absolute;
@@ -43,9 +49,9 @@ body
   
   .topnavbar ul li a {
     color: #929292;
-    padding: 6PX 27px 3px;
+    padding: 0PX 5px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 .nav{
@@ -174,20 +180,31 @@ body
     width: 893px;
   }
 
+
   .Item
   {
     border: 5px solid black;
     background-color: white;
     display: flex;
   }
- .stemware{
-  border-right: 1px solid #3B3A38;
-  }
+ .stemware .bdy-img
+ {
+  border-right: 2px solid gray;
+  font-size: 12px;
+  padding: 9px;
+    background-image: url('Assets/promo_glass.png');
+    background-repeat: no repeat;
+ }
+
   .home-accents
   {
-border-right: 1px solid #3B3A38;
+    border-right: 2px solid gray;
+    font-size: 12px;
+    padding: 9px;
+    background-image: url('Assets/promo_glass.png');
   }
-  /* .Clearance-items
+  .Clearance-items
   {
-
-  } */
+    font-size: 12px;
+    padding: 9px;
+  }
