@@ -3,8 +3,9 @@ body
   background-image: url('Assets/background.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Segoe UI";
 }
 
 .titlebar 
@@ -23,28 +24,27 @@ body
   background-color:#FFFFFF;
 }
 
-
-
-.topnavbar {
-  padding: 11px;
-  display: flex;
-}
-
 .titlebar ul {
-  list-style-type: none;
-  text-align: end;
-  padding: 8px 29px;
-  display: flex;
+  list-style-type:none;
+  display:flex;
+  color:#AFAFAF;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  font-size: 10px;
+  flex-direction:row;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 32px;
 }
 
-.titlebar ul li:not(:last-child)::after {
+.titlebar ul li:after {
   content:"|";
   color:#E3E3E3;
   padding-left:10px;
   padding-right:10px;
+}
+.titlebar ul li:last-child:after
+{
+  content: none;
 }
 
 .titlebar ul li img
@@ -66,51 +66,63 @@ body
 }
 
 .navbar-list ul {
+  list-style-type: none;
   display: flex;
-  margin: auto;
   justify-content: space-between;
-  background-color: #DAD9D7;
-  padding: 1px;
-  font-size: 12px;
+  font-size: 14px;
+  margin: auto;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
   width: 967px;
-
+  padding: 0px;
 }
 
 .navbar-list ul li {
-  display: flex;
   border-right: white 1px solid;
   padding: 8px 9px;
 }
 
-.navbar-list ul li:not(:last-child)::after {
-  content: "|";
-  color: #E3E3E3;
-}
+.navbar-list ul li:last-child {
+  border-right: none;
+  padding: 5px 9px;
+} 
 
 .navbar-list ul li .search
 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
+  margin-left: 15px;
 }
 
-.navbar-list ul li .search .search-bar
+.navbar-list ul li .search .search-bar input
 {
   font-size: 10px;
-  padding: 10px;
+  padding: 2px 8px;
   line-height: 10px;
   width: 140px;
-  border-bottom:1px solid #878586;
+  border-bottom:0px solid #878586;
   border-right:none;
 }
 
-.navbar-list ul li .search button{
+.navbar-list ul li .search Button
+{
+  margin-left: 8px;
+}
+
+.navbar-list ul li .search Button button
+{
   padding: 2px 3px;
-  border-radius: 2px;
-  border: 2px solid #aaaaaa;
+  border-radius: 3px;
+  border: thin solid #aaaaaa;
   background-color: #fff;
   font-size: 10px;
-  margin-left: 10PX;
+  cursor: pointer;
 }
+
+/* lastnavbar */
 
 .lastnavbar
 {
@@ -121,51 +133,64 @@ body
 .menu-items
 {
   display: flex;
-  margin: auto;
   justify-content: space-between;
-  font-size: 10px;
-  width: 967px;
   align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  margin: auto;
+  width: 967px;
 }
 
 .menu-items ul {
 
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding:0px;
+  margin-left: 7px;
 
 }
 
 .menu-items ul li {
   color: #aaaaaa;
   list-style-type: circle;
-}
-
-.menu-items ul li a
-{
-  padding-right: 21px;
-}
-
-.menu-items ul li:not(:first-child)::after 
-{
-  color: #E3E3E3;
-}
-
-.lastnavbar .menu-items ul li a {
-  color: #576eb4;
   padding-right: 24px;
-  text-decoration: none;
+  color: #626986;
 }
 
-
-.lastnavbar .menu-items ul .Bridal-logo 
+.menu-items ul li:first-child
 {
-  display: contents;
+  list-style-type: none;
+}
+
+.Bridal
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.bridal-logo
+{
+  width: 70px;
+  margin: 0 10px;
+}
+.bridal-content
+{
+  font-size: 12px;
+  color:#5D616A;
 }
 
 /* body */
 
 .container {
   margin: auto;
-  width: 957px;
+  width: 967px;
 
 }
 
@@ -182,20 +207,20 @@ body
 }
 
 .Dine-image .din-img {
+  width: 728px;
   position: relative;
 }
 
 .table-ideas {
-  padding: 6px;
   background-color: #3B3A38;
   margin: 6px 4px 7px 0px;
   color: #777674;
 }
 .table-ideas-list
 {
-  padding:20px;
-  border:1px solid rgba(166, 166, 166, 0.4);
-  line-height:10px;
+  padding: 20px;
+  border: 1px solid rgba(166, 166, 166, 0.4);
+  line-height: 11px;
 }
 
 .table-ideas-list h3 {
@@ -237,70 +262,87 @@ body
   padding-bottom:15px;
 }
 
+/* item-container */
 
-
-
-
-/* items */
-.item-container 
-{
-  width: 957px;
-  display:flex;
-  background-color:#FFFFFF;
-  justify-content: space-between;
-  border:8px solid #2F2D2E;
+.item-container {
+  background-color: white;
+  display: flex;
+  border: 7px solid black;
 }
-.stemware
-{
-  background-image: url("Assets/promo_glass.png");
+.glass-section{
+  padding-top: 0px;
+  margin-bottom: 15px;
+  margin-top: 17px;
+  width: 100%;
+  border-right: 1px solid #E1E1E1;
+}
+.steamware {
+  background-image: url("assets/promo_glass.png");
+  height: 172px;
+  padding: 5px;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  width: 309px;
+  background-position: left bottom;
 }
-
-.item-content
-{
-  /* margin: 11px 0px 26px 21px; */
-  border-right: 1px solid #aaaaaa; 
+.accent {
+  background-image: url("assets/promo_plates.png");
+  height: 172px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 312px;
 }
-.item-content h3
-{
-  font-size:14px;
-  font-weight: lighter;
-  padding:0px 10px;
+.clearance {
+  background-image: url("assets/promo_album.png");
+  height: 172px;
+  width: 318px;
+  padding: 5px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
-.item-content p
-{
+h4 {
+  font-size: 14px;
+  font-weight: initial;
+  letter-spacing: 0.5px;
+  font-family: Segoe UI;
+  padding: 0px 22px 3px 8px;
+  margin-bottom: 0px;
+}
+.mikasa-title {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.glass-text {
   font-size:9px;
   padding:0px 10px;
   margin-top:2px;
   color:#ADADAD;
+  /* padding: 9px 0px 10px 10px;
+  font-family: Segoe UI;
+  font-size: 11px;
+  margin: 0px;
+  color: #8d8d8d; */
 }
-
-.item-content UL
-{
-  padding-left:0px;
-  margin-right:10px;
-}
-.item-content .item-inks
-{
+.glass-description {
   font-size:11px;
   text-align:right;
   list-style-type:none;
   color:#606579;
   padding: 0px 17px ;
 }
-
-.home-accents {
-  background-image: url("Assets/promo_plates.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
+.frames-text {
+  font-family: Calibri Light;
+  padding-left: 10px;
+  font-size: 11px;
+  color: #8d8d8d;
 }
-
-.Clearance-items {
-  background-image: url("Assets/promo_album.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
+.frames-title {
+  font-family: Calibri Light;
+  font-weight: bold;
+  padding-left: 10px;
+  color: black;
+  font-size: 14px;
+  color: #454760;
 }
 
 /* footer */
