@@ -277,7 +277,7 @@ body
   border-right: 1px solid #E1E1E1;
 }
 .steamware {
-  background-image: url("assets/promo_glass.png");
+  background-image: url("Assets/promo_glass.png");
   height: 172px;
   padding: 5px;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body
   background-position: left bottom;
 }
 .accent {
-  background-image: url("assets/promo_plates.png");
+  background-image: url("Assets/promo_plates.png");
   height: 172px;
   padding: 5px;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@ body
   width: 312px;
 }
 .clearance {
-  background-image: url("assets/promo_album.png");
+  background-image: url("Assets/promo_album.png");
   height: 172px;
   width: 318px;
   padding: 5px;
