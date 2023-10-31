@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="homepage.css" />
     </head>
     <body>
         <div class="titlebar">
-            <div class="topnavbar">
-                <img src="Assets/logo.png" alt="logo">
-            </div>    
+            <div class="logo">
+            <img src="Assets/logo.png" alt="logo">
+            </div>        
                 <ul>
                     <li><a href="#">Welcome Jeffery(signout)</a></li>
                     <li><a href="#">My Account</a></li>
@@ -16,8 +17,8 @@
                     <li><a href="#">customer service</a></li>
                 </ul>
         </div>
-        <div class="topnav">
-            <div class="navbar">
+        <div class="navbar"> 
+            <div class="navbar-list">
                 <ul>
                     <li><a href="#">Dining</a></li>
                     <li><a href="#">Crystal</a></li>
@@ -26,20 +27,25 @@
                     <li><a href="#">Find a Gift</a></li>
                     <li><a href="#">Wedding Ideas</a></li>
                     <li><a href="#">Clearance & Special Offers</a></li>
-                    <li class="search-bar"><input type="text" placeholder="Search keyword/Item#"></li>
-                    <li><button>go</button></li>
+                    <li class="search">
+                        <div class="search-bar"><input type="text" placeholder="Search keyword/Item#"></div>
+                        <div class="Button"></div><button>go</button>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="lastnavbar">
-            <div class="navbar">
+            <div class="menu-items">
                 <ul>
                     <li><a >Free Shipping on Orders Over $150</a></li>
                     <li><a >Holiday Platters</a></li>
                     <li><a >Celebrate Thanksgiving</a></li>
                     <li><a >customer service</a></li>
-                    <li ><div class="Bridal-logo"><img src="Assets\Untitled-5.jpg" alt="">Bridal Registry</div></li>
                 </ul>
+                    <div class="Bridal-logo">
+                        <img src="Assets\Untitled-5.jpg" alt="">
+                        <div class="bridal-content">Bridal Registry</div>
+                    </div>
             </div>
         </div>
         <div class="container">
@@ -56,40 +62,76 @@
                         various styles and ideas.
                         </p>    
                         <ul>
-                            <li><a href="3">contemporary</a></li>
-                            <li><a href="3"> Traditional</a></li>
-                            <li><a href="3">Brunch</a></li>
-                            <li><a href="3">Themes</a></li>
-                            <li><a href="3">Buffet</a></li>
-                            <li><a href="3">Wine & cheese</a></li>
-                            <li><a href="3">se mote dress your table ideas</a></li>
+                            <li><a href="#">contemporary</a></li>
+                            <li><a href="#"> Traditional</a></li>
+                            <li><a href="#">Brunch</a></li>
+                            <li><a href="#">Themes</a></li>
+                            <li><a href="#">Buffet</a></li>
+                            <li><a href="#">Wine & cheese</a></li>
+                            <li><a href="#">se mote dress your table ideas</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="item-container">
-            <div class="Item">
+
+            <div class="item-container">
                 <div class="stemware">
-                    <div class="bdy-img">
-                        <div class="item-content">
-                            <H4>you'll love our fine stemware collection</H4>
-                            <h6>Duis autem vel eum iriure dolor in hendrerit vulpulate.</h6>
+                <div class="imges">
+                    <div class="item-content">
+                        <h3>you'll love our fine stemware collection</h3>
+                        <p>Duis autem vel eum iriure dolor in hendrerit vulpulate.</p>
+                        <div class="item-inks">
+                            <a href="#">See all stemware</a>
                         </div>
                     </div>
                 </div>
+                </div>
                 <div class="home-accents">
+                <div class="imges">
                     <div class="item-content">
                         <h3>Home accent for the holidays</h3>
                         <p>Lorem ipsum in amet, consectetuer adipiscing elit.</p>
+                        <div>
+                            <a href="#">See all home accents</a>
+                        </div>
                     </div>
                 </div>
+                </div>
                 <div class="Clearance-items">
-                    <h4>Mikasa Clearance sale 20% to 80% off</h4>
+                <div class="imges">
+                    <div class="item-content">
+                    <h3>Mikasa Clearance sale 20% to 80% off</h3>
                     <p>Ut wisi enim ad minim veniam</p>
                     <p>quis nostrud exercl tation.</p>
+                    <div>
+                        <a href="#">See all clearance items</a>
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
-        </div>   
+            <div class="footer">
+                <div class="footer-content">
+                  <ul >
+                    <li ><a href="#">About Mikasa</a></li>
+                    <li ><a href="#">Customer Service</a></li>
+                    <li ><a href="#">Privacy Policy</a></li>
+                  </ul>
+                  <p class="contact">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am - 6:00pm est) or <a href="#">Email Us</a></p>
+                  
+                  <p class="copyrights">© Copyright 2008 Mikasa & Company</p>
+                </div>
+                <div class="footer-Signup">
+                  <p >
+                    Sign up to receive special offers & promotions from Mikasa.
+                  </p>
+                  <div class="footer-mail">
+                    <input type="text" class="username" placeholder="Enter your email address" />
+                    <input type="submit" class="button" value="SIGN UP" />
+                  </div>
+                </div>
+              </div>
+        </div>
     </body>
 </html>
+                
