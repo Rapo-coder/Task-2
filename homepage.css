@@ -10,12 +10,10 @@ body
 .titlebar 
 {
     width: 967px;
-
     display: flex;
-    
     margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #FFFFFF;
     flex-direction:row;
 }
@@ -167,17 +165,9 @@ body
 
 .container {
   margin: auto;
-  width: 893px;
+  width: 957px;
 
 }
-
-/* .content {
-    background-color: #FFFFFF;
-    padding-bottom: 0px;
-    color: #fff;
-    background: rgba(7, 7, 7, 0.705);
-    display: flex;
-  } */
 
 .Dining-Section {
   width: 967px;
@@ -187,26 +177,69 @@ body
 
 
 .Dine-image {
-  width: 660px;
   padding: 6px;
   padding-bottom: 3px;
 }
 
 .Dine-image .din-img {
-  width: 708px;
   position: relative;
 }
 
 .table-ideas {
   padding: 6px;
   background-color: #3B3A38;
-  margin: 8px 4px 9px 0px;
+  margin: 6px 4px 7px 0px;
+  color: #777674;
+}
+.table-ideas-list
+{
+  padding:20px;
+  border:1px solid rgba(166, 166, 166, 0.4);
+  line-height:10px;
 }
 
-.table-ideas h3 {
-  margin-left: 4px;
+.table-ideas-list h3 {
+  font-size: 21px;
+  color:#FFFFFF;
   color: #F9F7F8;
 }
+.table-ideas-list p{
+  font-size: 12px;
+  color:#82817F;
+  line-height:17px;
+}
+
+.table-ideas-list ul
+{
+  font-size:12px;
+  list-style-type: none;
+  text-decoration: none;
+  padding:0px;
+}
+
+.table-ideas-list li
+{
+  padding-bottom:10px;
+  border-bottom:1px solid #504F4D;
+  padding-top:13px;
+  color:#FFFFFF;
+}
+
+.table-ideas-list li a
+{
+  color:#6F6E6C;
+  font-size: 13px;
+}
+
+.table-ideas-list ul li:last-child
+{
+  border-bottom: none;
+  padding-bottom:15px;
+}
+
+
+
+
 
 /* items */
 .item-container 
