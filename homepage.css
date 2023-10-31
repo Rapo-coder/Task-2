@@ -286,7 +286,6 @@ body
 }
 .accent {
   background-image: url("Assets/promo_plates.png");
-  height: 172px;
   padding: 5px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -294,7 +293,6 @@ body
 }
 .clearance {
   background-image: url("Assets/promo_album.png");
-  height: 172px;
   width: 318px;
   padding: 5px;
   background-position: right bottom;
