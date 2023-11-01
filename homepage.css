@@ -49,7 +49,7 @@ body
 
 .titlebar ul li img
 {
-  width: 20px;
+  width: 13px;
 }  
 
 .navbar {
@@ -68,12 +68,10 @@ body
 .navbar-list ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+  justify-content: space-around;
+  font-size: 13px;
   margin: auto;
   align-items: center;
-  flex-direction: row;
-  text-decoration: none;
   width: 967px;
   padding: 0px;
 }
@@ -109,17 +107,18 @@ body
 
 .navbar-list ul li .search Button
 {
+  color: black;
+  background-color: white;
   margin-left: 8px;
 }
 
-.navbar-list ul li .search Button button
+.navbar-list ul li .search .Button button
 {
   padding: 2px 3px;
   border-radius: 3px;
   border: thin solid #aaaaaa;
-  background-color: #fff;
   font-size: 10px;
-  cursor: pointer;
+
 }
 
 /* lastnavbar */
@@ -202,8 +201,8 @@ body
 
 
 .Dine-image {
-  padding: 6px;
-  padding-bottom: 3px;
+  padding: 7px;
+  padding-bottom: 2px;
 }
 
 .Dine-image .din-img {
@@ -212,21 +211,25 @@ body
 }
 
 .table-ideas {
+  font-family: "Segoe UI";
   background-color: #3B3A38;
-  margin: 6px 4px 7px 0px;
   color: #777674;
+  margin: 6px;
+  padding: 6px;
+  margin-left: 0px;
 }
 .table-ideas-list
 {
-  padding: 20px;
-  border: 1px solid rgba(166, 166, 166, 0.4);
-  line-height: 11px;
+  padding: 24px;
+  border: 2px solid rgba(166, 166, 166, 0.4);
+  line-height: 13px;
 }
 
 .table-ideas-list h3 {
   font-size: 21px;
   color:#FFFFFF;
   color: #F9F7F8;
+  font-weight: lighter;
 }
 .table-ideas-list p{
   font-size: 12px;
@@ -250,10 +253,10 @@ body
   color:#FFFFFF;
 }
 
-.table-ideas-list li a
+.table-ideas-list a
 {
   color:#6F6E6C;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .table-ideas-list ul li:last-child
@@ -267,18 +270,19 @@ body
 .item-container {
   background-color: white;
   display: flex;
-  border: 7px solid black;
+  border: 7px solid #11100f;
+
 }
-.glass-section{
+.item-content{
   padding-top: 0px;
   margin-bottom: 15px;
   margin-top: 17px;
   width: 100%;
+  height: 118px;
   border-right: 1px solid #E1E1E1;
 }
 .steamware {
   background-image: url("Assets/promo_glass.png");
-  height: 172px;
   padding: 5px;
   background-repeat: no-repeat;
   width: 309px;
@@ -306,35 +310,30 @@ h4 {
   padding: 0px 22px 3px 8px;
   margin-bottom: 0px;
 }
-.mikasa-title {
+.title {
   margin-top: 20px;
   padding-left: 10px;
 }
-.glass-text {
+.item-text {
   font-size:9px;
   padding:0px 10px;
   margin-top:2px;
   color:#ADADAD;
-  /* padding: 9px 0px 10px 10px;
-  font-family: Segoe UI;
-  font-size: 11px;
-  margin: 0px;
-  color: #8d8d8d; */
 }
-.glass-description {
+.item-link {
   font-size:11px;
   text-align:right;
   list-style-type:none;
   color:#606579;
   padding: 0px 17px ;
 }
-.frames-text {
+.clearance-text {
   font-family: Calibri Light;
   padding-left: 10px;
   font-size: 11px;
   color: #8d8d8d;
 }
-.frames-title {
+.clearance-link {
   font-family: Calibri Light;
   font-weight: bold;
   padding-left: 10px;
@@ -424,7 +423,7 @@ h4 {
 .footer-Signup .footer-mail .button {
   font-size:8px;
   padding:3px 8px;
-  border-radius:3px;
+  border-radius:5px;
   border-width:thin;
   border-color:#ABABAB;
 }
